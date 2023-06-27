@@ -1,0 +1,11 @@
+version: '3'
+services:
+  database:
+    container_name: postgres-toothfixers
+    image: postgres:latest
+    ports:
+      - "5434:5432"
+    volumes:
+      - C:\Users\user21\data\postgres\csc2021:\data\postgres
+    env_file:
+      - csc2021.env
